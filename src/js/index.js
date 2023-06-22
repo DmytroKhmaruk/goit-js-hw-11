@@ -1,6 +1,8 @@
 import axios from 'axios';
 import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const KEY_API = '37677565-5d16b12621b5c2bbae0a75dd4';
 
 const refs = {
@@ -139,4 +141,5 @@ async function handleScroll() {
 
 function showEndOfResultsMessage() {
   Notiflix.Notify.info("End of search results.");
-}
+  }
+  

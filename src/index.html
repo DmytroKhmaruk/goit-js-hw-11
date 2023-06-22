@@ -5,18 +5,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page title</title>
+  <link rel="stylesheet" href="./css/common.css">
 </head>
 
 <body>
-  <form class="search-form" id="search-form">
-    <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-    <button type="submit">Search</button>
-  </form>
-  <div class="gallery" id="gallery"></div>
+  <div class="container">
+    <form class="search-form" id="search-form">
+      <input class="input" type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+      <button class="button" type="submit">Search</button>
+    </form>
+    <div class="gallery" id="gallery"></div>
 
-  <button type="button" class="load-more" style="display: none;">Load more</button>
+    <button type="button" class="load-more" style="display: none;">Load more</button>
+  </div>
 
   <script type="module" src="/src/js/index.js"></script>
-</body>
 
 </html>
