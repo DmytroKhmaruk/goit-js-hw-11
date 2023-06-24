@@ -86,7 +86,7 @@ function displayImages(images) {
       `
     )
     .join('');
-  refs.gallery.innerHTML += cardsHTML;
+  refs.gallery.innerHTML = cardsHTML;
 
   if (lightbox === null) {
     lightbox = new SimpleLightbox('.gallery a', {
@@ -142,4 +142,3 @@ async function handleScroll() {
 function showEndOfResultsMessage() {
   Notiflix.Notify.info("End of search results.");
   }
-  
